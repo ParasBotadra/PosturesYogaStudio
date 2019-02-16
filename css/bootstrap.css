@@ -1127,7 +1127,7 @@ img {
 .carousel-inner > .item > a > img {
   display: block;
   max-width: 100%;
-  height: auto;
+  
 }
 .img-rounded {
   border-radius: 6px;
@@ -5753,9 +5753,13 @@ button.close {
 .modal-dialog {
   position: relative;
   width: auto;
-  margin: 10px;
+  margin: 0px !important;
+
+  /* margin-left: 25vw !important; */
+
 }
 .modal-content {
+  width:100vw ; 
   position: relative;
   background-color: #fff;
   -webkit-background-clip: padding-box;

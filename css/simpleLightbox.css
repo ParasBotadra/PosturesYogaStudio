@@ -26,6 +26,7 @@
 .slbWrap {
   position: absolute;
   text-align: center;
+  overflow-y: hidden !important;
 }
 .slbWrap:before {
   content: "";
