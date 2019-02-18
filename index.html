@@ -1831,14 +1831,14 @@ var token = '1769818313.9ce2013.eb7ca56f6c96496f84db40d79a9c3a86', // learn how 
     num_photos = 50;
  
 $.ajax({ // the first ajax request returns the ID of user rudrastyh
-	url: 'https://api.instagram.com/v1/users/search',
+	url: 'https://api.instagram.com/v1/users/self',
 	dataType: 'jsonp',
 	type: 'GET',
 	data: {access_token: token, q: username}, // actually it is just the search by username
 	success: function(data){
 		console.log(data);
 		$.ajax({
-			url: 'https://api.instagram.com/v1/users/' + data.data[0].id + '/media/recent', // specify the ID of the first found user
+			url: 'https://api.instagram.com/v1/users/self' + data.data[0].id + '/media/recent', // specify the ID of the first found user
 			dataType: 'jsonp',
 			type: 'GET',
 			data: {access_token: token, count: num_photos},
