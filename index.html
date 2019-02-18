@@ -1838,7 +1838,7 @@ $.ajax({ // the first ajax request returns the ID of user rudrastyh
 	success: function(data){
 		console.log(data);
 		$.ajax({
-			url: 'https://api.instagram.com/v1/users/self' + data.data[0].id + '/media/recent', // specify the ID of the first found user
+			url: 'https://api.instagram.com/v1/users/self/media/recent', // specify the ID of the first found user
 			dataType: 'jsonp',
 			type: 'GET',
 			data: {access_token: token, count: num_photos},
