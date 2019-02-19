@@ -730,13 +730,14 @@ a.w3_agile_vimeo:hover{
 /*-- register --*/
 .register{
 	background:url(../images/10.jpg) no-repeat 0px 0px;
-	background-size:cover;
-	-webkit-background-size:cover;
-	-moz-background-size:cover;
-	-o-background-size:cover;
-	-ms-background-size:cover;
+	background-size:100% 100%;
+	-webkit-background-size:100% 100%;
+	-moz-background-size:100% 100%;
+	-o-background-size:100% 100%;
+	-ms-background-size:100% 100%;
 	background-attachment:fixed;
 	padding:8em 0;
+	background-repeat: no-repeat;
 }
 .agile_register_grid{
 	width:55%;
@@ -3202,4 +3203,19 @@ display:flex ;
 	display:flex ;
 	height:  100% ;
 	width: 10%;
+}
+
+
+
+
+.testimonials_logo {
+	border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-top: 10% !important;
+}
+
+
+.navbar_hover_color:hover{
+	color:#997A05 !important;
 }
